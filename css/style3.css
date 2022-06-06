@@ -1,0 +1,162 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: monospace;
+  font-size: larger;
+  background-color: #F0F7F4;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: " nav nav nav nav " " art1 art1 art1 art1 " " . art2 art3 . ";
+  justify-items: center;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+  background-color: #FF686B;
+  height: 60px;
+  grid-area: nav;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.box1 {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.box_art {
+  display: grid;
+  margin: 30px;
+  justify-items: center;
+  border-radius: 5px;
+}
+.box_art--1 {
+  grid-area: art1;
+  background-color: #94DD26;
+}
+.box_art--2 {
+  grid-area: art2;
+}
+.box_art--3 {
+  margin: 0px;
+  grid-area: art3;
+  background-color: #ED254E;
+}
+
+button {
+  background-color: azure;
+  border: 1px solid green;
+}
+
+.bann {
+  display: flex;
+  justify-content: center;
+  background-color: #FF686B;
+}
+
+.banner {
+  width: 40%;
+  grid-area: ban;
+}
+
+hr {
+  color: white;
+}
+
+.shadow {
+  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+}
+
+.box_div {
+  background-color: #FFA69E;
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+.box_div--3v2 {
+  background-color: yellow;
+}
+.box_div--4v2 {
+  background-color: #ED254E;
+}
+.box_div--5v2 {
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.box_div--6v2 {
+  background-color: red;
+}
+.box_div--6v3 {
+  background-color: cyan;
+}
+.box_div--7v2 {
+  background-color: lightcoral;
+}
+.box_div--8v2 {
+  background-color: orangered;
+}
+.box_div--9v2 {
+  background-color: yellowgreen;
+}
+.box_div--10v2 {
+  background-color: palevioletred;
+}
+
+.text_div {
+  width: 250px;
+  height: 250px;
+  margin: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  border: #8a8d8c;
+}
+
+textarea {
+  border: white;
+}/*# sourceMappingURL=style3.css.map */

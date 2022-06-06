@@ -1,0 +1,199 @@
+@use '_varible.scss'as *;
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: monospace;
+    font-size: larger;
+    background-color: #F0F7F4;
+
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        " nav nav nav nav "
+        " art1 art1 art1 art1 "
+        " . art2 art3 . ";
+
+    justify-items: center;
+}
+
+nav {
+    display: grid;
+    justify-content: center;
+    background-color: $color_helper2;
+    height: 60px;
+    grid-area: nav;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    text-align: center
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.box1 {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.box_art {
+    display: grid;
+    margin: 30px;
+    justify-items: center;
+    border-radius: 5px;
+    //background-color:#94DD26; 
+
+
+    &--1 {
+
+        grid-area: art1;
+        background-color: #94DD26;
+    }
+
+    &--2 {
+        grid-area: art2;
+        //background-color:#C287E8; 
+    }
+
+    &--3 {
+        margin: 0px;
+        grid-area: art3;
+        background-color: $bacground_div3;
+    }
+
+}
+
+button {
+    background-color: azure;
+    border: 1px solid green;
+
+}
+
+.bann {
+    display: flex;
+    justify-content: center;
+    background-color: $color_helper2;
+}
+
+.banner {
+
+    width: 40%;
+    grid-area: ban;
+
+}
+
+hr {
+    color: white;
+}
+
+.shadow {
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.box_div {
+    background-color: $color_helper3;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+
+
+
+
+    // &--3 {
+    //     background-color: $color_helper3;
+
+    // }
+
+    &--3v2 {
+        background-color: yellow;
+    }
+
+    &--4v2 {
+        background-color: $bacground_div3;
+    }
+
+    &--5v2 {
+        font-size: xx-large;
+        font-weight: 900;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    &--6v2 {
+        background-color: red;
+    }
+
+    &--6v3 {
+        background-color: cyan;
+    }
+
+    &--7v2 {
+        background-color: lightcoral;
+    }
+
+    &--8v2 {
+        background-color: orangered;
+    }
+
+    &--9v2 {
+        background-color: yellowgreen;
+    }
+
+    &--10v2 {
+        background-color: palevioletred;
+    }
+}
+
+.text_div {
+
+    width: 250px;
+    height: 250px;
+    margin: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    border: #8a8d8c;
+}
+
+textarea {
+    border: white;
+}
