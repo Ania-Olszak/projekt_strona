@@ -49,23 +49,7 @@ while($row3= mysqli_fetch_array($result3))
           <i class="fas fa-eye"></i>
         </div>
          <div class="field input">
-          <label>Wybierz typ konta</label>
-        <select name="type" id="type">
-    <option value="student">Uczeń</option>
-    <option value="teacher">Nauczyciel</option>
-</select>
-        </div>
-         <div class="field input">
-          <label>Wybierz klase</label>
-        <select name="class" id="class">
-    <?php echo $options;?>
-</select>
-        </div>
-            <div class="field input">
-          <label>Wybierz przedmiot nauczania</label>
-        <select name="subject" id="subject">
-    <?php echo $options1;?>
-</select>
+            
         </div>
         <div class="field image">
           <label>Wybierz Zdjęcie</label>
